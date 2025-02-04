@@ -6,13 +6,18 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.6;
   color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -30,7 +35,6 @@ a {
 }
 
 .navbar-brand img {
-  
   transition: all 0.3s ease;
 }
 
@@ -47,7 +51,7 @@ a {
 }
 
 .nav-link:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -107,7 +111,8 @@ a {
 }
 /* Home Section */
 .home-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./ASSET/background\ image.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./ASSET/background\ image.jpg") no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -136,11 +141,17 @@ a {
 }
 
 /* Vision & Mission Sections Common Styles */
-.vision-section, .mission-section, .services-section, .career-section {
+.vision-section,
+.mission-section,
+.services-section,
+.career-section {
   padding: 80px 0;
 }
 
-.vision-section h2, .mission-section h2, .services-section h2, .career-section h2 {
+.vision-section h2,
+.mission-section h2,
+.services-section h2,
+.career-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #2d3436;
@@ -149,8 +160,11 @@ a {
   padding-bottom: 15px;
 }
 
-.vision-section h2::after, .mission-section h2::after, .services-section h2::after, .career-section h2::after {
-  content: '';
+.vision-section h2::after,
+.mission-section h2::after,
+.services-section h2::after,
+.career-section h2::after {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -161,12 +175,14 @@ a {
 }
 
 /* Vision & Mission Lists */
-.vision-text, .mission-text {
+.vision-text,
+.mission-text {
   list-style: none;
   padding-left: 0;
 }
 
-.vision-text li, .mission-text li {
+.vision-text li,
+.mission-text li {
   margin-bottom: 1.5rem;
   padding-left: 2rem;
   position: relative;
@@ -175,8 +191,9 @@ a {
   color: #4a5568;
 }
 
-.vision-text li:before, .mission-text li:before {
-  content: '→';
+.vision-text li:before,
+.mission-text li:before {
+  content: "→";
   position: absolute;
   left: 0;
   color: #fd0d0d;
@@ -223,7 +240,7 @@ a {
 }
 
 /* Client Section */
- .clients-section {
+.clients-section {
   background-color: #f8f9fa;
   padding-top: 50px;
 }
@@ -276,33 +293,37 @@ a {
 
 /* Update button colors to be more solid */
 .btn-danger {
-  background-color: #dc1414;
-  border-color: #dc1414;
+  background-color: #b20000;
+  border-color: #b20000;
 }
 
 .btn-danger:hover {
-  background-color: #c41212;
-  border-color: #c41212;
+  background-color: #b20000;
+  border-color: #b20000;
 }
 
 .btn-success {
-  background-color: #075E54;
-  border-color: #075E54;
+  background-color: #075e54;
+  border-color: #075e54;
 }
 
 .btn-success:hover {
-  background-color: #075E54;
-  border-color: #075E54;
+  background-color: #075e54;
+  border-color: #075e54;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .vision-section h2, .mission-section h2, .services-section h2, .career-section h2 {
+  .vision-section h2,
+  .mission-section h2,
+  .services-section h2,
+  .career-section h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
 
-  .vision-text li, .mission-text li {
+  .vision-text li,
+  .mission-text li {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
@@ -354,13 +375,13 @@ a {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.contact-icon.whatsapp {   
-  background-color: #075E54;
-}  
+.contact-icon.whatsapp {
+  background-color: #075e54;
+}
 
-.contact-icon.phone {   
-  background-color: #B20000;
-}  
+.contact-icon.phone {
+  background-color: #b20000;
+}
 
 .contact-icon i {
   font-size: 24px;
@@ -384,7 +405,7 @@ a {
 }
 
 .tooltip::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -8px;
   top: 50%;
@@ -514,23 +535,23 @@ a {
 }
 
 .apply-buttons .btn-danger {
-  background-color: #B20000;
-  border-color: #B20000;
+  background-color: #b20000;
+  border-color: #b20000;
 }
 
 .apply-buttons .btn-danger:hover {
-  background-color: #B20000;
-  border-color: #B20000;
+  background-color: #b20000;
+  border-color: #b20000;
 }
 
 .apply-buttons .btn-success {
-  background-color: #075E54;
-  border-color: #075E54;
+  background-color: #075e54;
+  border-color: #075e54;
 }
 
 .apply-buttons .btn-success:hover {
-  background-color: #075E54;
-  border-color: #075E54;
+  background-color: #075e54;
+  border-color: #075e54;
 }
 
 /* Mobile responsiveness for buttons */
@@ -554,7 +575,7 @@ a {
 }
 
 .modal-header {
-  background-color: #B20000;
+  background-color: #b20000;
   padding: 0.8rem 1.2rem;
   border-bottom: none;
 }
@@ -578,7 +599,8 @@ a {
   color: #4b5563;
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
   font-size: 0.9rem;
   padding: 0.4rem 0.75rem;
   border: 1px solid #e5e7eb;
@@ -586,8 +608,9 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.form-control:focus, .form-select:focus {
-  border-color: #B20000;
+.form-control:focus,
+.form-select:focus {
+  border-color: #b20000;
   box-shadow: 0 0 0 0.2rem rgba(253, 13, 13, 0.15);
 }
 
@@ -608,15 +631,15 @@ textarea.form-control {
 }
 
 .btn-danger {
-  background-color: #fd0d0d;
-  border-color: #fd0d0d;
+  background-color: #b20000;
+  border-color: #b20000;
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
 }
 
 .btn-danger:hover {
-  background-color: #e60000;
-  border-color: #e60000;
+  background-color: #b20000;
+  border-color: #b20000;
 }
 
 .btn-secondary {
@@ -631,13 +654,14 @@ textarea.form-control {
   .modal-dialog {
     margin: 1rem;
   }
-  
+
   .modal-body {
     padding: 1rem;
     max-height: 80vh;
   }
-  
-  .form-control, .form-select {
+
+  .form-control,
+  .form-select {
     font-size: 0.85rem;
   }
 }
