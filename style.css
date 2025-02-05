@@ -1,0 +1,667 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* !Navbar */
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: #2d3436 !important;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #fd0d0d;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+  width: 70%;
+}
+
+.nav-link:hover {
+  color: #fd0d0d !important;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    padding: 1rem 0;
+  }
+
+  .nav-link {
+    padding: 0.7rem 0 !important;
+    text-align: center;
+  }
+
+  .nav-link:after {
+    display: none;
+  }
+}
+
+/* Add scroll behavior */
+.navbar-scrolled {
+  padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.98) !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-scrolled .navbar-brand img {
+  transform: scale(0.9);
+}
+/* Home Section */
+.home-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./ASSET/background\ image.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.home-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.home-section p {
+  font-size: 24px;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  color: #f8f9fa;
+}
+
+.home-section .btn {
+  margin-top: 20px;
+}
+
+/* Vision & Mission Sections Common Styles */
+.vision-section,
+.mission-section,
+.services-section,
+.career-section {
+  padding: 80px 0;
+}
+
+.vision-section h2,
+.mission-section h2,
+.services-section h2,
+.career-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3436;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.vision-section h2::after,
+.mission-section h2::after,
+.services-section h2::after,
+.career-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #fd0d0d;
+}
+
+/* Vision & Mission Lists */
+.vision-text,
+.mission-text {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vision-text li,
+.mission-text li {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.vision-text li:before,
+.mission-text li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #fd0d0d;
+  font-weight: bold;
+}
+
+/* Services Section Enhancement */
+.service-card {
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #fd0d0d;
+  margin-bottom: 1.5rem;
+}
+
+.service-card h4 {
+  color: #2d3436;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Client Section */
+.clients-section {
+  background-color: #f8f9fa;
+  padding-top: 50px;
+}
+
+.clients-section .carousel-inner {
+  padding: 0px 0;
+}
+
+.clients-section .carousel-item img {
+  transition: transform 0.3s ease;
+}
+
+.clients-section .carousel-item img:hover {
+  transform: scale(1.4);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0d6efd;
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Career Section Enhancements */
+.career-section .job-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card .apply-buttons {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+/* Make all job cards the same height */
+.career-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.career-section .col-lg-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Update button colors to be more solid */
+.btn-danger {
+  background-color: #b20000;
+  border-color: #b20000;
+}
+
+.btn-danger:hover {
+  background-color: #b20000;
+  border-color: #b20000;
+}
+
+.btn-success {
+  background-color: #075e54;
+  border-color: #075e54;
+}
+
+.btn-success:hover {
+  background-color: #075e54;
+  border-color: #075e54;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .vision-section h2,
+  .mission-section h2,
+  .services-section h2,
+  .career-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .vision-text li,
+  .mission-text li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Fixed Contact Icons */
+.fixed-contact-icons {
+  position: fixed;
+  right: 20px;
+  bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-icon.whatsapp {
+  background-color: #075e54;
+}
+
+.contact-icon.phone {
+  background-color: #b20000;
+}
+
+.contact-icon i {
+  font-size: 24px;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+}
+
+.contact-icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Phone Numbers Tooltip */
+.phone-numbers {
+  min-width: 200px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.phone-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.phone-link img {
+  border-radius: 2px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+  .fixed-contact-icons {
+    right: 15px;
+    bottom: 15px;
+    gap: 10px;
+  }
+
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contact-icon i {
+    font-size: 20px;
+  }
+
+  .tooltip {
+    right: 55px;
+    font-size: 12px;
+  }
+
+  .phone-numbers {
+    min-width: 180px;
+  }
+
+  .phone-link {
+    font-size: 12px;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Contact button improvements */
+.apply-buttons a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apply-buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  cursor: pointer;
+}
+
+.contact-icon:active {
+  transform: scale(0.95);
+}
+
+.fixed-contact-icons {
+  z-index: 1000;
+}
+
+/* Career Application Buttons */
+.apply-buttons {
+  margin-top: auto;
+}
+
+.apply-buttons a {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.apply-buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.apply-buttons a:active {
+  transform: translateY(0);
+}
+
+.apply-buttons .btn-danger {
+  background-color: #b20000;
+  border-color: #b20000;
+}
+
+.apply-buttons .btn-danger:hover {
+  background-color: #b20000;
+  border-color: #b20000;
+}
+
+.apply-buttons .btn-success {
+  background-color: #075e54;
+  border-color: #075e54;
+}
+
+.apply-buttons .btn-success:hover {
+  background-color: #075e54;
+  border-color: #075e54;
+}
+
+/* Mobile responsiveness for buttons */
+@media (max-width: 576px) {
+  .apply-buttons a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Email Modal Styles */
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background-color: #b20000;
+  padding: 0.8rem 1.2rem;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.modal-body {
+  padding: 1.2rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Form Styles */
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #4b5563;
+}
+
+.form-control,
+.form-select {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #b20000;
+  box-shadow: 0 0 0 0.2rem rgba(253, 13, 13, 0.15);
+}
+
+.form-control[readonly] {
+  background-color: #f9fafb;
+  cursor: default;
+}
+
+textarea.form-control {
+  min-height: 60px;
+  max-height: 120px;
+}
+
+/* Button Styles */
+.modal-footer {
+  padding: 0.8rem 1.2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.btn-danger {
+  background-color: #b20000;
+  border-color: #b20000;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+}
+
+.btn-danger:hover {
+  background-color: #b20000;
+  border-color: #b20000;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  border-color: #6b7280;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 1rem;
+  }
+
+  .modal-body {
+    padding: 1rem;
+    max-height: 80vh;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.85rem;
+  }
+}
